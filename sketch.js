@@ -192,6 +192,17 @@ function draw(){
 
     slingshot.display();
     hexagon.display();
+    strokeWeight(50);
+    fill("red");
+    textSize(20);
+    text("PRESS SPACE FOR A ANOTHER CHANCE !!",100,100)
+    
+    strokeWeight(50);
+    fill("green");
+    textSize(20);
+    text("Drag the Hexagonal Stone and Release it, to launch it towards the blocks",100,350)
+
+    
 }
 
 function mouseDragged(){
@@ -204,6 +215,7 @@ function keyPressed() {
     if(keyCode === 32){
         slingshot.attach(hexagon.body)
     }
+
     
 }
 async function getBackgroundImg(){
